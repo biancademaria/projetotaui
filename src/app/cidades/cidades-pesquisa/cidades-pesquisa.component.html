@@ -24,7 +24,7 @@
                     [totalRecords]="totalRegistros"
                     [lazy]="true"
                     [responsive]="true"
-                    [onLazyLoad]="aoMudarPagina($event)">
+                    (onLazyLoad)="aoMudarPagina($event)">
                 <ng-template pTemplate="header">
                     <tr>
                         <th class="col-id-header">#</th>
